@@ -93,7 +93,7 @@ Using `scatter.csv`: how do you interpret the linear regression?
 
 ### Answer
 
-I found the following values for the linear regression based on `scatter.csv`: 
+I found the following values for the linear regression based on `scatter.csv`]: 
 
 - Slope: The slope is -0.006432585. This implies a weak negative relationship between x and y. 
 - R squared: The R-squared value is 0.005559. This implies that the linear model is a poor fit for the data because the majority of the variability in y isn't captured by the relationship with x. 
@@ -137,16 +137,14 @@ scatter_plot <- ggplot(scatter_df, aes(x=x, y=y)) +
 print(scatter_plot)
 ```
 
+View the code [q3_scatter.R](https://github.com/kellyjadams/data-science-challenge/blob/main/q3_scatter.R).
+
 We get the following values using the `lm` function in R. 
 
 - Intercept: 0.105960
 - R squared: 0.005559
 - Slope: -0.006432585
 - P value: 0.461
-
-To view the scatter plot see the attachment: `q3_scatter plot.png`. 
-
-
 
 ## Question 4
 
@@ -190,6 +188,8 @@ print(histogram_plot)
 ```
 
 The bin width out of this calculation is: 6.55.
+
+View the [q4_histogram.R](https://github.com/kellyjadams/data-science-challenge/blob/main/q4_histogram.R). 
 
 ## Question 5
 
@@ -390,9 +390,9 @@ The main problem with this was because the one-hot encoding made the training da
 
 First I went back to the drawing board and tested out three main models:
 
-1. **Logistic Regression**: Which was initial model, because the training data only had an output of 0 or 1 (binary). But I realized the output would also give a binary answer. But this is not correct, since the prompt mentioned the labels for `test.csv` can be continuous. 
-2. **Gradient Boosting**: This can be used to capture complex relationships. But it required more fine tuning. it is also highly accurate for non-linear data. 
-3. **Random Forest**: This can also capture more complex relationships but it is more accurate for linear data. 
+1. **Logistic Regression**: Which was initial model, because the training data only had an output of 0 or 1 (binary). But I realized the output would also give a binary answer. But this is not correct, since the prompt mentioned the labels for `test.csv` can be continuous. View that output file [here](https://github.com/kellyjadams/data-science-challenge/blob/main/labels_logistic.txt).
+2. **Gradient Boosting**: This can be used to capture complex relationships. But it required more fine tuning. it is also highly accurate for non-linear data. View that output file [here](https://github.com/kellyjadams/data-science-challenge/blob/main/labels_gradient.txt). 
+3. **Random Forest**: This can also capture more complex relationships but it is more accurate for linear data. View that output file [here](https://github.com/kellyjadams/data-science-challenge/blob/main/c6_random_forest_model.py). 
 
 For all of these tests the only thing I changed in the code was the model I was going to use. Everything else stayed the same. 
 
