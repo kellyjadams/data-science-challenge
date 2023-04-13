@@ -1,5 +1,4 @@
 # Data Ccience Challenge
-# Data Science Challenge
 
 ## Question 1
 
